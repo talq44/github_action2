@@ -7,7 +7,6 @@ on:
 
 permissions: write-all
 
-
 jobs:
   trigger_b_workflow:
     runs-on: ubuntu-latest
