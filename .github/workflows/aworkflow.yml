@@ -12,7 +12,7 @@ jobs:
   trigger_b_workflow:
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger B Workflow
+      - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
