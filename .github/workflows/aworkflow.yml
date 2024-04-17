@@ -15,5 +15,5 @@ jobs:
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          repository: talq44/github_action
+          repository: talq44/github_action2
           event-type: trigger-b-workflow
