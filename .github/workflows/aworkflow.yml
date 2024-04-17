@@ -1,0 +1,19 @@
+name: A Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+permissions: write-all
+
+jobs:
+  trigger_b_workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger B Workflow
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: talq44/github_action
+          event-type: trigger-b-workflow
